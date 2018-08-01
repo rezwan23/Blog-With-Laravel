@@ -1,0 +1,12 @@
+td form#deleteform {
+    display: inline;
+}
+td .img-thumb img{
+    width: 200px;
+    height: auto;
+}
+.cat_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

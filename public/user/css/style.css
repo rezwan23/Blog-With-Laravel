@@ -1,0 +1,16 @@
+.ft_img_first {
+    height: 200px;
+    border-radius: 4px;
+}
+.post-item:nth-last-child(-n+2) .post-item__inner {
+    padding-bottom: 25px !important;
+    border-bottom: 1px solid #e3e3e3 !important;
+}
+.ft_img {
+    width: 120px;
+    height: 98px;
+    border-radius: 4px;
+}
+.post-item__top {
+    padding-top: 14px;
+}
