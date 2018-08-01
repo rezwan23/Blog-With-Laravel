@@ -14,7 +14,7 @@
 # Author 
 ## Razwanul Ghani
 
-<p align="center"><img src="https://github.com/rezwan23/Blog-With-Laravel/blob/master/ghani.jpg"/></p>
+<p align="center"><img src="https://github.com/rezwan23/Blog-With-Laravel/blob/master/public/images/ghani.jpg"/></p>
 
 
 ## About Laravel
