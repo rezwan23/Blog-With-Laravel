@@ -100,6 +100,14 @@ $user = Auth::user();
                         Enter post meta here...
                     </textarea>
                         </div>
+                        <h3 class="box-title">Custom Style
+                            <small>Enter Custom CSS (if any).,.</small>
+                        </h3>
+                        <div class="box-body pad">
+                    <textarea name="style" class="form-control">
+                        Custom Style
+                    </textarea>
+                        </div>
                     </div>
                     <!-- /.box -->
                 </div>
