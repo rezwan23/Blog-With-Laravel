@@ -107,6 +107,14 @@ $user = Auth::user();
                         {{$post->post_meta}}
                     </textarea>
                         </div>
+                        <h3 class="box-title">Custom Style
+                            <small>Enter Custom CSS (if any).,.</small>
+                        </h3>
+                        <div class="box-body pad">
+                    <textarea name="style" class="form-control">
+                        {!! $post->style !!}
+                    </textarea>
+                        </div>
                     </div>
                     <!-- /.box -->
                 </div>
@@ -132,7 +140,7 @@ $user = Auth::user();
                         <!-- /.box-header -->
                         <div class="box-body pad">
                     <textarea id="editor1" name="body" rows="10" cols="80">
-                        {{$post->body}}
+                        {!! $post->body !!}
                     </textarea>
                         </div>
                         <div class="box-footer">
