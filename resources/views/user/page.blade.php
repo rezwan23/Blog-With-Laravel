@@ -1,6 +1,13 @@
 @extends('user.layouts.app')
 @section('name', \Illuminate\Support\Facades\Auth::user()->name)
 @section('title', $page->title)
+@if($page->style)
+@section('head')
+    <style>
+        {!! $page->style !!}
+    </style>
+@endsection
+@endif
 @section('content')
     <div class="col-lg-8 content-wrapper">
 
