@@ -71,9 +71,18 @@ $user = Auth::user();
                             <!-- /. tools -->
                         </div>
                         <!-- /.box-header -->
+
                         <div class="box-body pad">
                     <textarea id="editor1" name="body" rows="5" cols="80">
                         {!! $page->body !!}
+                    </textarea>
+                        </div>
+                        <h3 class="box-title">Custom Style
+                            <small>Enter Custom CSS (if any).,.</small>
+                        </h3>
+                        <div class="box-body pad">
+                    <textarea name="style" class="form-control">
+                        {!! $page->style !!}
                     </textarea>
                         </div>
                         <div class="box-footer">
