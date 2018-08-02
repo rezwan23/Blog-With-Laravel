@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->text('post_meta');
+            $table->text('style');
             $table->text('featured_image');
             $table->text('img_alt_text');
             $table->text('body');
