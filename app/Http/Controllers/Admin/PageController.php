@@ -49,6 +49,11 @@ class PageController extends Controller
         $page->title = $request->title;
         $page->slug = $request->slug;
         $page->body = $request->body;
+        if($request->style){
+            $page->style = $request->style;
+        }else{
+            $page -> style = '';
+        }
         $page->save();
         return redirect()->route('page.index')->with('success-message', 'Page Added Successfully!');
     }
@@ -94,6 +99,11 @@ class PageController extends Controller
         $page->title = $request->title;
         $page->slug = $request->slug;
         $page->body = $request->body;
+        if($request->style){
+            $page->style = $request->style;
+        }else{
+            $page -> style = '';
+        }
         $page->update();
         return redirect()->route('page.index')->with('success-message', 'Page Updated Successfully!');
     }
