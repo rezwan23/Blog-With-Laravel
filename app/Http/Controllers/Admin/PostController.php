@@ -58,6 +58,11 @@ class PostController extends Controller
         $post->body = $request->body;
         $post->img_alt_text = $request->img_alt_text;
         $post->post_meta = $request->post_meta;
+        if($request->style){
+            $post->style = $request->style;
+        }else{
+            $post->style = '';
+        }
         $post->save();
         $post->categories()->sync($request->categories);
         return redirect()->route('post.index')->with('success-message', 'Post Added Successfully!');
@@ -109,6 +114,11 @@ class PostController extends Controller
         $post->body = $request->body;
         $post->img_alt_text = $request->img_alt_text;
         $post->post_meta = $request->post_meta;
+        if($request->style){
+            $post->style = $request->style;
+        }else{
+            $post->style = '';
+        }
         $post->update();
         $post->categories()->sync($request->categories);
         return redirect()->route('post.index')->with('success-message', 'Post Updated Successfully!');
