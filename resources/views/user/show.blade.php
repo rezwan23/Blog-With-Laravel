@@ -3,6 +3,13 @@
 @section('post-meta')
 {!! $post->post_meta !!}
 @endsection
+@if($post->style)
+@section('head')
+    <style>
+        {!! $post->style !!}
+    </style>
+@endsection
+@endif
 @section('content')
     <div class="col-lg-8 content-wrapper">
 
